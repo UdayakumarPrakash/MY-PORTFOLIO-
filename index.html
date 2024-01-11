@@ -1,0 +1,178 @@
+<!Doctype html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protofolio</title>
+        <link rel="stylesheet" href="./style.css">
+
+  
+        <script src="https://kit.fontawesome.com/c3d458ac82.js" crossorigin="anonymous"></script>
+       </head>
+    <body id="bo">
+       
+  <div id="head">
+    <div class="container">
+        <nav>
+            <span class="text">PRAKASH#</span>
+            <ul id="sidemenu">
+                <li><a href="#head">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="clo()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="on()"></i>
+        </nav>
+<div class="head-text">
+    <p>WEB DEVELOPER</p>
+    <h1>Hello, I'm <span>PRAKASH</span><br>UDAYAKUMAR FROM INDIA</h1>
+</div>
+    </div>
+  </div>
+  <!-- -------------------------About------------------ -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./Prakash-1883.jpg" alt="image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="title">ABOUT ME</h1>
+                <p>I am Prakash Udayakumar. I have Completed my Bachelor's Degree in Computer Applications at Jamal Mohamed College.Currently,
+                     i am pursing a Web Desining Course at T4TEQ Software Solutions, Trichy.Proficient in HTML,CSS,JAVASCRIPT,BOOTSTRAP and Jquery.
+                     Skilled in creating responsive and user-freindly websites. 
+                </p>
+               <div class="tab-titles">
+                <p class="tab-links active-link"  onclick="sub('skills')">SKILLS</p>
+                <p class="tab-links"  onclick="sub('education')">EDUCATION</p>
+                <p class="tab-links"  onclick="sub('internship')">INTERNSHIP</p>
+               </div>
+               <div class="tab-contents active-tab " id="skills">
+                <ul>
+                    <li><span>WEB DEVELOPER</span><br>Design and construct websites</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>JQUERY</li>
+                    <li>BOOTSTRAP</li>
+                    <li>MYSQL</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>OCTOBER-2023 TO JANUARY-2024</span><br>WEB DESIGN Course at T4TEQ Software Solutions, Trichy.</li>
+                    <li><span>JUNE-2019 TO JUNE-2022</span><br>BCA from Jamal Mohamed College, Trichy</li>
+                    <li><span>JUNE-2018 TO APRIL-2019</span><br>XII from Bishop Heber Higher Secondary School, Teppakullam, Trichy.</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="internship">
+                <ul>
+                    <li><span>OCTOBER-2022 TO MARCH-2023</span><br>BPS TRAINEE at Tata Consultany Service, Chennai</li>
+                   
+                </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- -----------------------------services-------------------------------- -->
+  <div id="services">
+<div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque non, illo similique error reprehenderit alias voluptatum quo, facere placeat quis
+                 porro labore saepe provident repellendus deserunt distinctio qui harum sunt.</p>
+                 <a href="#">learn more</a>
+        </div>
+      
+        <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>DATA BASE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque non, illo similique error reprehenderit alias voluptatum quo, facere placeat quis
+                 porro labore saepe provident repellendus deserunt distinctio qui harum sunt.</p>
+                 <a href="#">learn more</a>
+        </div>
+    </div>
+</div>
+   </div>
+   <!-- ---------------------------------contact---------------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>u.prakash303trichy@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 8526973969</p>
+                <div class="social-icons">
+                    <a href="" style="text-decoration:none;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/prakash-mystic11?gsh=MTRuOXRuZzJ6Zjl2ZQ" style="text-decoration: none;"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/uprakash09" style="text-decoration:none;"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/UdayakumarPrakash" style="text-decoration:none;"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <button type="submit" class="btn btn1"><a href="./Prakash Web Developer.pdf">DOWNLOAD RESUME</a></button>
+               </div>
+            <div class="contact-right">
+<form>
+    <input type="text" name="Name" placeholder="Your Name" id="na" required>
+    <input type="email" name="email" placeholder="Your email-id" id="em" required>
+    <textarea name="Message" rows="6" placeholder="Your Message" id="mess" required></textarea>
+    <button type="submit" class="btn btn1" onclick="su()">SUBMIT</button>
+</form>
+</div>
+        </div>
+    </div>
+     <div class="copyright">
+        <p>Copyright @ PRAKASH#.</p>
+     </div>
+   </div>
+
+       <script>
+      var tablinks=document.getElementsByClassName("tab-links");
+      var tabcontents=document.getElementsByClassName("tab-contents");
+      function sub(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+       </script>
+
+       <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function on(){
+            sidemenu.style.right=  "0";
+        }
+        function clo(){
+            sidemenu.style.right=  "-200px";
+        }
+       
+       </script>
+       <!-- <script>
+        var Name=document.getElementById("na").value;
+        var Email=document.getElementById("em").value;
+        var Messages=document.getElementById("mess").value;
+
+        function get(){
+        var name=localStorage.getItem("Name" Name);
+        var email=localStorage.getItem("Email");
+        var Messag=localStorage.getItem("Messages");
+            alert("hello");
+        }
+       </script> -->
+       <script>
+        function su(){
+            alert("Your Response has been Taken");
+        }
+       </script>
+        
+    </body>
+</html>
